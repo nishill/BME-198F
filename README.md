@@ -12,29 +12,25 @@ pip install -r requirements.txt
 
 ## Files:
 >
-	populations.ipynb - ipython notebook for analysis and testing of the GA4GH APIS through
->							the 1000 genomes and SGDP datasets
+	populations.ipynb - ipython notebook for analysis and testing of the GA4GH APIS through the 1000 genomes and SGDP datasets
 
 	variantMatrix.py - variantMatrix module used as a replication tool for testing the use cases
 							betweent two datasets
 	
 ## Directories:
 >
-	1kgenomes_csids - premade callset id value, population key json dictionaries 
->						for speeding up the data analysis process in the 1000 Genomes dataset
+	1kgenomes_csids - premade callset id value, population key json dictionaries for speeding up the data analysis process in the 1000 Genomes dataset
 
-	simons_csids - premade callset id value, population key json dictionaries
->						for speeding up the data analysis process in the SGDP dataset
+	simons_csids - premade callset id value, population key json dictionaries for speeding up the data analysis process in the SGDP dataset
 
-	metadata_processing - metadata processing etl script for processing the metadata in the SGDP
-							dataset
+	metadata_processing - metadata processing etl script for processing the metadata in the SGDP dataset
 
 ## Statistical Tests:
 >
 	Random Sampling genes - I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosom.
 							Then, I displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good way to
 							summarize information about a genome as well as capability to compare population specific information between individuals genomes.
-	![Settings Window](https://raw.github.com/nishill/BME-198F/master/raw-allele-frequencies.png)
+	![Settings Window](https://github.com/nishill/BME-198F/blob/master/raw-allele-frequencies.png)
 
 >
 	Bootstrapping - here I random sampled variant information in a subpopulation in order to gain insight into what the populations behavior is as a whole. I 
@@ -47,7 +43,7 @@ In this section I will explain the difficulty in comparing two variant sets when
 the GA4GH application programming interfaces. I hope that this will lead to improvements in the data model
 so that the GA4GH APIs will become a helpful tool in comparing genomic data across different datasets. 
 
-	I hosted the Simons Genome Diversity Project (SGDP) data through the GA4GH APIs. The code I have written
+I hosted the Simons Genome Diversity Project (SGDP) data through the GA4GH APIs. The code I have written
 in the populations ipython notebook uses the functionality of the GA4GH APIs to test how researchers might use
 two large-scale genomic datasets to gain meaningful insights through the use of the GA4GH APIs. With the GA4GH I 
 had previously written code which creates a variant call adjacency matrix with the 1000 Genomes project APIs. To test
