@@ -34,6 +34,8 @@ pip install -r requirements.txt
 	Random Sampling genes - I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosom.
 							Then, I displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good way to
 							summarize information about a genome as well as capability to compare population specific information between individuals genomes.
+	![alt tag](https://github.com/nishill/BME-198F/blob/master/raw-allele-frequencies.png ) 
+
 >
 	Bootstrapping - here I random sampled variant information in a subpopulation in order to gain insight into what the populations behavior is as a whole. I 
 					graped the allele frequencies through a histogram and then fit the Gaussian distribution to the plot. 
