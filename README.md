@@ -72,15 +72,16 @@ accomodate these structural differences.
 Specifically, all of the variant call information in the 1000 Genomes Project data is located in a single variant set.
 In the SGDP dataset, there is a variant set for each individual. This creates an incompatibility in how these two datasets
 could be analyzed together. Call set ids in one variant set cannot be compared to call set ids in another variant set. For example, 
-in the 1000 genomes dataset, variant call data can be compared across individuals in the variant set because they all belong to a single dataset. 
-In the SGDP dataset, individuals variant call data cannot be compared between other variant sets. Other challenges arose also
-because some of the variants in the SGDP dataset did not have variant names associated with them so there was no way to compare one
-variant between in one variant set to the same variant in another variant set.  
+in the 1000 genomes dataset, variant call data can be compared across individuals in the variant set because they all belong 
+to a single dataset. In the SGDP dataset, individuals variant call data cannot be compared between other variant sets. Other 
+challenges arose when some of the variants in the SGDP dataset did not have variant names associated with them so there was no 
+way to compare one variant between in one variant set to the same variant in another variant set.  
 
 I tried to resolve this issue by altering my metadata processing script to include all of the individuals SGDP callset information 
 in each variant set though could not proceed because of itegrity constraints in the sql database. 
 
-I would like to accomodate in resolving this barrier in the future so it is easier for users of the API to compare different genomic datasets. 
+I would like to make call set information available through all vairant sets in the future so it is easier for 
+users of the API to compare different genomic datasets. 
 
 Output of Variant Call Matrix in 1kgenomes Chinese subpopulation
 ![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/CHSvcm.png) 
