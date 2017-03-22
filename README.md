@@ -48,7 +48,7 @@ pip install -r requirements.txt
 	subpopulations. To bootstrap I random sampled variant information in a subpopulation for 100 iterations. Then I 
 	graphed the resulting allele frequencies for each iteration and made a histogram of the data. I then constructed the 
 	Gaussian Distribution with parameters mean(data) and standard_deviation(data). I did this for the Great Britain and 
-	Japanese subpopulations in the 1000 Genomes dataset. 
+	Japanese subpopulations in the 1000 Genomes dataset. These variants are in the gene SPTA1.  
 
 ![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/gbr_rv.png)
 ![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/jpt_rv.png)
