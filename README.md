@@ -50,6 +50,10 @@ pip install -r requirements.txt
 	Gaussian Distribution with parameters mean(data) and standard_deviation(data). I did this for the Great Britain and 
 	Japanese subpopulations in the 1000 Genomes dataset. 
 
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/gbr_rv.png)
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/jpt_rv.png)
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/gbr_cv.png)
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/jpt_cv.png)
 
 ## Cross Dataset Comparisons:
 
