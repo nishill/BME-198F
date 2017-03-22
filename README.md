@@ -35,16 +35,20 @@ pip install -r requirements.txt
 ## Statistical Tests:
 >
 	Random Sampling genes:
-	I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosom.
-	I then displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good way to
-	summarize information about a genome as well as capability to compare population specific information between individuals genomes.
+	I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosome.
+	I then displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good 
+	way to summarize information about a genome as well as capability to compare population specific information between 
+	individuals genomes.
 
 ![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/raw-allele-frequencies.png)
 
 >
 	Bootstrapping:
-	To bootstrap I random sampled variant information in a subpopulation in order to gain insight into what the populations behavior is as a whole. I 
-	graphed the allele frequencies for each bootstrap through a histogram and then fit the Gaussian distribution to the plot. 
+	Bootstrapping allows you to measure the accuracy in your dataset. I used it in order to gain insight into whole 
+	subpopulations. To bootstrap I random sampled variant information in a subpopulation for 100 iterations. Then I 
+	graphed the resulting allele frequencies for each iteration and made a histogram of the data. I then constructed the 
+	Gaussian Distribution with parameters mean(data) and standard_deviation(data). I did this for the Great Britain and 
+	Japanese subpopulations in the 1000 Genomes dataset. 
 
 
 ## Cross Dataset Comparisons:
