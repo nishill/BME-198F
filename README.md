@@ -12,36 +12,45 @@ pip install -r requirements.txt
 
 ## Files:
 >
-	populations.ipynb - ipython notebook for analysis and testing of the GA4GH APIS through the 1000 genomes and SGDP datasets
+	populations.ipynb:
+	ipython notebook for analysis and testing of the GA4GH APIS through the 1000 genomes and SGDP datasets
 
-	variantMatrix.py - variantMatrix module used as a replication tool for testing the use cases
-							betweent two datasets
+	variantMatrix.py: 
+	variantMatrix module used as a replication tool for testing the use cases betweent two datasets
 	
 ## Directories:
 >
-	1kgenomes_csids - premade callset id value, population key json dictionaries for speeding up the data analysis process in the 1000 Genomes dataset
+	1kgenomes_csids:
+	premade callset id value, population key json dictionaries for speeding up the data analysis process in the 1000 Genomes dataset
 
-	simons_csids - premade callset id value, population key json dictionaries for speeding up the data analysis process in the SGDP dataset
+	simons_csids: 
+	premade callset id value, population key json dictionaries for speeding up the data analysis process in the SGDP dataset
 
-	metadata_processing - metadata processing etl script for processing the metadata in the SGDP dataset
+	metadata_processing:
+	metadata processing etl script for processing the metadata in the SGDP dataset
+
+	pics:
+	images of Bioinformatics models and error message
 
 ## Statistical Tests:
 >
-	Random Sampling genes - I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosom.
-							Then, I displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good way to
-							summarize information about a genome as well as capability to compare population specific information between individuals genomes.
+	Random Sampling genes:
+	I randomly looked at a region on each chromosome in the genome and then randomly sampled 10 genes on each chromosom.
+	I then displayed the variant allele frequencies for each variant in the randomly chosen gene. This process is a good way to
+	summarize information about a genome as well as capability to compare population specific information between individuals genomes.
 
-![Settings Window](https://github.com/nishill/BME-198F/blob/master/raw-allele-frequencies.png)
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/raw-allele-frequencies.png)
 
 >
-	Bootstrapping - here I random sampled variant information in a subpopulation in order to gain insight into what the populations behavior is as a whole. I 
-					graped the allele frequencies through a histogram and then fit the Gaussian distribution to the plot. 
+	Bootstrapping:
+	To bootstrap I random sampled variant information in a subpopulation in order to gain insight into what the populations behavior is as a whole. I 
+	graphed the allele frequencies for each bootstrap through a histogram and then fit the Gaussian distribution to the plot. 
 
 
 ## Cross Dataset Comparisons:
 
-In this section I will explain the difficulty in comparing two variant sets when utilizing 
-the GA4GH application programming interfaces. I hope that this will lead to improvements in the data model
+In this section I will explain some challenges I had when comparing two variant sets through the 
+GA4GH application programming interfaces. I hope that this will lead to improvements in the data model
 so that the GA4GH APIs will become a helpful tool in comparing genomic data across different datasets. 
 
 I hosted the Simons Genome Diversity Project (SGDP) data through the GA4GH APIs. The code I have written
@@ -63,4 +72,10 @@ variant between in one variant set to the same variant in another variant set.
 I tried to resolve this issue by altering my metadata processing script to include all of the individuals SGDP callset information 
 in each variant set though could not proceed because of itegrity constraints in the sql database. 
 
-I would like to accomodate in resolving this barrier in the future so it is easier for users of the API to compare different genomic datasets.  
+I would like to accomodate in resolving this barrier in the future so it is easier for users of the API to compare different genomic datasets. 
+
+Output of Variant Call Matrix in 1kgenomes Chinese subpopulation
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/CHSvcm.png) 
+
+Error message from constructing Variant Call Matrix in SGDP dataset
+![Settings Window](https://github.com/nishill/BME-198F/blob/master/pics/ga4gh_error.png) 
