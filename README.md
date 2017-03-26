@@ -1,5 +1,17 @@
 # BME 198F - independent study course at UCSC
 
+>
+	This repository contains all of the code used for independent coursework with the GA4GH in
+	the Genomics Institute at UCSC, winter quarter 2017. The first task I completed was to host
+	Nanzeen Rahman's variant call data through the GA4GH APIs with a virtual machine. The second 
+	task I completed was to host the Simons Foundation Genome Diversity (SGDP) on another 
+	vritual machine, accessible through the GA4GH APIs. I obtained access to the SGDP dataset
+	through the Open Science Grid (OSG). The final task I completed was to do statistical analysis
+	of populations in both the 1000 Genomes and SGDP datasets. This allowed thorough testing of
+	the APIs and demonstrations of their application to Bioinformatics.  
+
+
+
 *To test and use GA4GH APIs*
 
 ```
@@ -28,6 +40,9 @@ pip install -r requirements.txt
 
 	metadata_processing:
 	metadata processing etl script for processing the metadata in the SGDP dataset
+
+	rahman-connect:
+	quick code demonstration of connecting to the GA4GH Nanzeen Rahman lab data
 
 	pics:
 	images of Bioinformatics models and error message
