@@ -90,7 +90,7 @@ could be analyzed together. Call set ids in one variant set cannot be compared t
 in the 1000 genomes dataset, variant call data can be compared across individuals in the variant set because they all belong 
 to a single dataset. In the SGDP dataset, individuals variant call data cannot be compared between other variant sets. Other 
 challenges arose when some of the variants in the SGDP dataset did not have variant names associated with them so there was no 
-way to compare one variant between in one variant set to the same variant in another variant set.  
+way to compare one variant in one variant set to the same variant in another variant set.  
 
 I tried to resolve this issue by altering my metadata processing script to include all of the individuals SGDP callset information 
 in each variant set though could not proceed because of itegrity constraints in the sql database. 
